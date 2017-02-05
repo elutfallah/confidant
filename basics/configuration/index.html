@@ -229,6 +229,16 @@ the XSRF token cookie:</p>
 export XSRF_COOKIE_NAME=&#39;XSRF-TOKEN&#39;
 </code></pre>
 
+<h3 id="disabling-credential-conflict-checks">Disabling credential conflict checks</h3>
+
+<p>By default confidant will ensure that credentials mapped to a service don&#39;t
+have any conflicting credential pair keys. These checks occur when mapping
+credentials to a service, or when modifying credentials that are mapped to a
+service. To disable this check:</p>
+
+<pre><code class="bash">export IGNORE_CONFLICTS=&#39;True&#39;
+</code></pre>
+
 <h2 id="advanced-environment-configuration">Advanced environment configuration</h2>
 
 <h3 id="statsd-metrics">statsd metrics</h3>
